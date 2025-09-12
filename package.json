@@ -1,0 +1,25 @@
+{
+  "name": "click-speed-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pulkit-Shandilya/Click-Speed-Counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pulkit-Shandilya/Click-Speed-Counter/issues"
+  },
+  "homepage": "https://github.com/Pulkit-Shandilya/Click-Speed-Counter#readme",
+  "devDependencies": {
+    "electron": "^38.1.0"
+  }
+}

@@ -1,0 +1,81 @@
+        p{
+            font-size: 1.5rem;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h2{
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        #clicker {
+            
+            padding: 50px 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #reset {
+            padding: 20px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform: translateY(2px);
+        }
+        #clocky{
+            justify-content: center; 
+            display: flex;
+            gap:10px
+        }
+        #time-enter{
+            padding: 5px;
+            font-size: 1rem;
+            border: 2px solid #ccccccc4;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: 200px;
+        }
+        #time-enter:focus{
+            outline: none;
+            border-color: #4caf4f65;
+            box-shadow: 0 0 5px rgba(76, 175, 79, 0.301);
+        }
+        #time-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        #time-label label{
+            font-size: 1.2rem;
+            color: #555;
+            padding-top: 0.8em;
+        }
+        #buttons-div {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+
+        
