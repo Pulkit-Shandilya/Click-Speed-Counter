@@ -1,25 +1,60 @@
 {
   "name": "click-speed-counter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A click speed counter desktop app",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "dist": "electron-builder --publish=never"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pulkit-Shandilya/Click-Speed-Counter.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["click", "speed", "counter", "game", "desktop"],
+  "author": "Pulkit Shandilya",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Pulkit-Shandilya/Click-Speed-Counter/issues"
   },
   "homepage": "https://github.com/Pulkit-Shandilya/Click-Speed-Counter#readme",
+  "build": {
+    "appId": "com.yourcompany.clickspeedcounter",
+    "productName": "Click Speed Counter",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable", 
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
   "devDependencies": {
-    "electron": "^38.1.0"
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
   }
 }
